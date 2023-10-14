@@ -1,7 +1,14 @@
 public class Grades {
     public int[] notEnoughGrade(int[] gradesArray){
-        int[] notEnoughGradeArray = new int[gradesArray.length];
         int count = 0;
+        for(int i = 0; i < gradesArray.length; i++){
+            if(gradesArray[i] < 40)
+                count += 1;
+
+        }
+
+        int[] notEnoughGradeArray = new int[count];
+        count = 0;
 
         for(int i = 0; i < gradesArray.length; i++){
             if(gradesArray[i] < 40){
