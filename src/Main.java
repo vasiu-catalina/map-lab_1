@@ -17,7 +17,7 @@ public class Main {
         testOperationsArray.testUnexpectedMinSum(new OperationsArray());*/
 
         // test Grades
-        TestGrades testGrades = new TestGrades();
+        /*TestGrades testGrades = new TestGrades();
 
         testGrades.testExpectedNotEnoughGrade(new Grades());
         testGrades.testUnexpectedNotEnoughGrade(new Grades());
@@ -29,6 +29,21 @@ public class Main {
         testGrades.testUnexpectedRoundGrade(new Grades());
 
         testGrades.testExpectedRoundGradeMax(new Grades());
-        testGrades.testUnexpectedRoundGradeMax(new Grades());
+        testGrades.testUnexpectedRoundGradeMax(new Grades());*/
+
+        // test OperationsBigNumber
+        TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
+
+        testOperationsBigNumber.testExpectedSumNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedSumNumbers(new OperationsBigNumber());
+
+        testOperationsBigNumber.testExpectedDiffNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDiffNumbers(new OperationsBigNumber());
+
+        testOperationsBigNumber.testExpectedMulNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedMulNumbers(new OperationsBigNumber());
+
+        testOperationsBigNumber.testExpectedDivNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());
     }
 }

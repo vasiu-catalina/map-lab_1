@@ -2,8 +2,8 @@ public class OperationsBigNumber {
     public long convertNumber(int[] numberArray){
         long number = 0;
         for(int i = 0; i < numberArray.length; i++){
-            number += numberArray[i];
             number *= 10;
+            number += numberArray[i];
         }
 
         return number;
