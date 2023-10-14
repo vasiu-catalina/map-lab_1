@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         // test OperationsArray
-        /*TestOperationsArray testOperationsArray = new TestOperationsArray();
+        TestOperationsArray testOperationsArray = new TestOperationsArray();
 
         testOperationsArray.testExpectedMaxNumber(new OperationsArray());
         testOperationsArray.testUnexpectedMaxNumber(new OperationsArray());
@@ -14,10 +14,10 @@ public class Main {
         testOperationsArray.testUnexpectedMaxSum(new OperationsArray());
 
         testOperationsArray.testExpectedMinSum(new OperationsArray());
-        testOperationsArray.testUnexpectedMinSum(new OperationsArray());*/
+        testOperationsArray.testUnexpectedMinSum(new OperationsArray());
 
         // test Grades
-        /*TestGrades testGrades = new TestGrades();
+        TestGrades testGrades = new TestGrades();
 
         testGrades.testExpectedNotEnoughGrade(new Grades());
         testGrades.testUnexpectedNotEnoughGrade(new Grades());
@@ -29,7 +29,7 @@ public class Main {
         testGrades.testUnexpectedRoundGrade(new Grades());
 
         testGrades.testExpectedRoundGradeMax(new Grades());
-        testGrades.testUnexpectedRoundGradeMax(new Grades());*/
+        testGrades.testUnexpectedRoundGradeMax(new Grades());
 
         // test OperationsBigNumber
         TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
@@ -45,5 +45,20 @@ public class Main {
 
         testOperationsBigNumber.testExpectedDivNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());
+
+        // test ElectronicsStore
+        TestElectronicsStore electronicsStore = new TestElectronicsStore();
+
+        electronicsStore.testExpectedCheapKeyboard(new ElectronicsStore());
+        electronicsStore.testUnexpectedCheapKeyboard(new ElectronicsStore());
+
+        electronicsStore.testExpectedExpensiveObject(new ElectronicsStore());
+        electronicsStore.testUnexpectedExpensiveObject(new ElectronicsStore());
+
+        electronicsStore.testExpectedExpensiveUSB(new ElectronicsStore());
+        electronicsStore.testUnexpectedExpensiveUSB(new ElectronicsStore());
+
+        electronicsStore.testExpectedTotalPrice(new ElectronicsStore());
+        electronicsStore.testUnexpectedTotalPrice(new ElectronicsStore());
     }
 }
