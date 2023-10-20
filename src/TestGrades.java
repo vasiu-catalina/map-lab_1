@@ -1,31 +1,30 @@
 import java.util.Arrays;
 
 public class TestGrades {
-    public void testExpectedNotEnoughGrade(Grades grades){
+    public void testExpectedNotEnoughGrade(Grades grades) throws Exception{
         int[] gradesArray = {100, 20, 25, 70, 39};
         int[] expected = {20, 25, 39};
 
         try {
             assert Arrays.equals(grades.notEnoughGrade(gradesArray), expected);
         }
-        catch (AssertionError e){
+        catch (Exception e){
             System.out.println("Not the expected answer!");
         }
     }
 
     public void testUnexpectedNotEnoughGrade(Grades grades){
-        int[] gradesArray = {100, 20, 25, 70, 39};
-        int[] unexpected = {20, 25, 70};
+        int[] gradesArray = {};
 
         try {
-            assert Arrays.equals(grades.notEnoughGrade(gradesArray), unexpected);
+            grades.notEnoughGrade(gradesArray);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedAverageNumber(Grades grades){
+    public void testExpectedAverageNumber(Grades grades) throws Exception{
         int[] gradesArray = {100, 20, 25, 70, 39};
 
         try{
@@ -37,17 +36,17 @@ public class TestGrades {
     }
 
     public void testUnexpectedAverageNumber(Grades grades){
-        int[] gradesArray = {100, 20, 25, 70, 39};
+        int[] gradesArray = {};
 
-        try{
-            assert grades.averageNumber(gradesArray) == 51;
+        try {
+            grades.averageNumber(gradesArray);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedRoundGrade(Grades grades){
+    public void testExpectedRoundGrade(Grades grades) throws Exception{
         int[] gradesArray = {99, 29, 84, 79, 38};
         int[] expected = {100, 29, 85, 80, 40};
 
@@ -60,18 +59,17 @@ public class TestGrades {
     }
 
     public void testUnexpectedRoundGrade(Grades grades){
-        int[] gradesArray = {99, 29, 84, 79, 38};
-        int[] unexpected = {100, 29, 85, 80, 38};
+        int[] gradesArray = {};
 
-        try{
-            assert Arrays.equals(grades.roundGrade(gradesArray), unexpected);
+        try {
+            grades.roundGrade(gradesArray);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedRoundGradeMax(Grades grades){
+    public void testExpectedRoundGradeMax(Grades grades) throws Exception{
         int[] gradesArray = {99, 29, 84, 79, 38};
         int[] result = grades.roundGrade(gradesArray);
 
@@ -84,14 +82,13 @@ public class TestGrades {
     }
 
     public void testUnexpectedRoundGradeMax(Grades grades){
-        int[] gradesArray = {99, 29, 84, 79, 38};
-        int[] result = grades.roundGrade(gradesArray);
+        int[] gradesArray = {};
 
-        try{
-            assert grades.roundGradeMax(result) == 99;
+        try {
+            grades.roundGradeMax(gradesArray);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 }

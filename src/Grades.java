@@ -1,5 +1,8 @@
 public class Grades {
-    public int[] notEnoughGrade(int[] gradesArray){
+    public int[] notEnoughGrade(int[] gradesArray) throws Exception{
+        if(gradesArray.length == 0)
+            throw new Exception("Array is empty!");
+
         int count = 0;
         for(int i = 0; i < gradesArray.length; i++){
             if(gradesArray[i] < 40)
@@ -20,7 +23,10 @@ public class Grades {
         return notEnoughGradeArray;
     }
 
-    public int averageNumber(int[] gradesArray){
+    public int averageNumber(int[] gradesArray) throws Exception{
+        if(gradesArray.length == 0)
+            throw new Exception("Array is empty!");
+
         int average = 0;
 
         for(int i = 0; i < gradesArray.length; i++)
@@ -29,7 +35,10 @@ public class Grades {
         return average / gradesArray.length;
     }
 
-    public int[] roundGrade(int[] gradesArray){
+    public int[] roundGrade(int[] gradesArray) throws Exception{
+        if(gradesArray.length == 0)
+            throw new Exception("Array is empty!");
+
         int[] roundGradeArray = new int[gradesArray.length];
 
         for(int i = 0; i < gradesArray.length; i++){
@@ -42,7 +51,10 @@ public class Grades {
         return roundGradeArray;
     }
 
-    public int roundGradeMax(int[] gradesArray){
+    public int roundGradeMax(int[] gradesArray) throws Exception{
+        if(gradesArray.length == 0)
+            throw new Exception("Array is empty!");
+
         int[] roundGradeArray = roundGrade(gradesArray);
         int max = -1;
 
