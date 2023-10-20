@@ -1,7 +1,13 @@
 import java.util.Arrays;
 
 public class OperationsBigNumber {
-    public int[] sumNumbers(int[] numberArray1, int[] numberArray2){
+    public int[] sumNumbers(int[] numberArray1, int[] numberArray2) throws Exception{
+        if(numberArray1.length != numberArray2.length)
+            throw new Exception("Array lengths do not match!");
+
+        if(numberArray1.length == 0)
+            throw new Exception("Array is empty!");
+
         int[] numberArraySum = new int[numberArray1.length];
 
         int carry = 0;
@@ -22,7 +28,13 @@ public class OperationsBigNumber {
         return numberArraySum1;
     }
 
-    public int[] diffNumbers(int[] num1, int[] num2){
+    public int[] diffNumbers(int[] num1, int[] num2) throws Exception{
+        if(num1.length != num2.length)
+            throw new Exception("Array lengths do not match!");
+
+        if(num1.length == 0)
+            throw new Exception("Array is empty!");
+
         int maxLen = Math.max(num1.length, num2.length);
         int[] result = new int[maxLen];
         int carry = 0;
@@ -55,7 +67,10 @@ public class OperationsBigNumber {
         return result;
     }
 
-    public int[] mulNumbers(int[] numberArray1, int digit){
+    public int[] mulNumbers(int[] numberArray1, int digit) throws Exception{
+        if(numberArray1.length == 0)
+            throw new Exception("Array is empty!");
+
         int[] numberArrayMul = new int[numberArray1.length];
 
         int carry = 0;
@@ -76,7 +91,10 @@ public class OperationsBigNumber {
         return numberArrayMul1;
     }
 
-    public int[] divNumbers(int[] numberArray1, int digit){
+    public int[] divNumbers(int[] numberArray1, int digit) throws Exception{
+        if(numberArray1.length == 0)
+            throw new Exception("Array is empty!");
+
         int[] numberArrayDiv = new int[numberArray1.length];
 
         int carry = 0;

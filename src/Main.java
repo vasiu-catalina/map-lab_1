@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
 
         // test OperationsArray
-        TestOperationsArray testOperationsArray = new TestOperationsArray();
+        /*TestOperationsArray testOperationsArray = new TestOperationsArray();
 
         testOperationsArray.testExpectedMaxNumber(new OperationsArray());
         testOperationsArray.testExpectedMinNumber(new OperationsArray());
@@ -12,7 +12,7 @@ public class Main {
         testOperationsArray.testUnexpectedMaxNumber(new OperationsArray());
         testOperationsArray.testUnexpectedMinNumber(new OperationsArray());
         testOperationsArray.testUnexpectedMaxSum(new OperationsArray());
-        testOperationsArray.testUnexpectedMinSum(new OperationsArray());
+        testOperationsArray.testUnexpectedMinSum(new OperationsArray());*/
 
         // test Grades
         /*TestGrades testGrades = new TestGrades();
@@ -28,12 +28,17 @@ public class Main {
         testGrades.testUnexpectedRoundGradeMax(new Grades());*/
 
         // test OperationsBigNumber
-        /*TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
+        TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
 
         testOperationsBigNumber.testExpectedSumNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testExpectedDiffNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testExpectedMulNumbers(new OperationsBigNumber());
-        testOperationsBigNumber.testExpectedDivNumbers(new OperationsBigNumber());*/
+        testOperationsBigNumber.testExpectedDivNumbers(new OperationsBigNumber());
+
+        testOperationsBigNumber.testUnexpectedSumNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDiffNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedMulNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());
 
         // test ElectronicsStore
         /*TestElectronicsStore electronicsStore = new TestElectronicsStore();
