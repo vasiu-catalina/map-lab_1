@@ -5,6 +5,8 @@ public class Grades {
 
         int count = 0;
         for(int i = 0; i < gradesArray.length; i++){
+            if(gradesArray[i] < 0 || gradesArray[i] > 100)
+                throw new Exception("Grade is not valid!");
             if(gradesArray[i] < 40)
                 count += 1;
 
@@ -29,8 +31,12 @@ public class Grades {
 
         int average = 0;
 
-        for(int i = 0; i < gradesArray.length; i++)
+        for(int i = 0; i < gradesArray.length; i++){
+            if(gradesArray[i] < 0 || gradesArray[i] > 100)
+                throw new Exception("Grade is not valid!");
+
             average += gradesArray[i];
+        }
 
         return average / gradesArray.length;
     }
@@ -42,6 +48,9 @@ public class Grades {
         int[] roundGradeArray = new int[gradesArray.length];
 
         for(int i = 0; i < gradesArray.length; i++){
+            if(gradesArray[i] < 0 || gradesArray[i] > 100)
+                throw new Exception("Grade is not valid!");
+
             if(gradesArray[i] < 38 || (((gradesArray[i] / 5) * 5 + 5) - gradesArray[i]) >= 3)
                 roundGradeArray[i] = gradesArray[i];
             else

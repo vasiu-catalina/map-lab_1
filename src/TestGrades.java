@@ -24,6 +24,17 @@ public class TestGrades {
         }
     }
 
+    public void testUnexpectedNotEnoughGrade1(Grades grades){
+        int[] gradesArray = {20, -1, 60};
+
+        try {
+            grades.notEnoughGrade(gradesArray);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
     public void testExpectedAverageNumber(Grades grades) throws Exception{
         int[] gradesArray = {100, 20, 25, 70, 39};
 
@@ -37,6 +48,17 @@ public class TestGrades {
 
     public void testUnexpectedAverageNumber(Grades grades){
         int[] gradesArray = {};
+
+        try {
+            grades.averageNumber(gradesArray);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
+    public void testUnexpectedAverageNumber1(Grades grades){
+        int[] gradesArray = {120, 40, 88};
 
         try {
             grades.averageNumber(gradesArray);
@@ -69,6 +91,17 @@ public class TestGrades {
         }
     }
 
+    public void testUnexpectedRoundGrade1(Grades grades){
+        int[] gradesArray = {120, 40, 88};
+
+        try {
+            grades.roundGrade(gradesArray);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
     public void testExpectedRoundGradeMax(Grades grades) throws Exception{
         int[] gradesArray = {99, 29, 84, 79, 38};
         int[] result = grades.roundGrade(gradesArray);
@@ -83,6 +116,17 @@ public class TestGrades {
 
     public void testUnexpectedRoundGradeMax(Grades grades){
         int[] gradesArray = {};
+
+        try {
+            grades.roundGradeMax(gradesArray);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
+    public void testUnexpectedRoundGradeMax1(Grades grades){
+        int[] gradesArray = {20, -1, 60};
 
         try {
             grades.roundGradeMax(gradesArray);

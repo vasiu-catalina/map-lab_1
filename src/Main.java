@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
 
         // test OperationsArray
-        /*TestOperationsArray testOperationsArray = new TestOperationsArray();
+        TestOperationsArray testOperationsArray = new TestOperationsArray();
 
         testOperationsArray.testExpectedMaxNumber(new OperationsArray());
         testOperationsArray.testExpectedMinNumber(new OperationsArray());
@@ -12,10 +12,10 @@ public class Main {
         testOperationsArray.testUnexpectedMaxNumber(new OperationsArray());
         testOperationsArray.testUnexpectedMinNumber(new OperationsArray());
         testOperationsArray.testUnexpectedMaxSum(new OperationsArray());
-        testOperationsArray.testUnexpectedMinSum(new OperationsArray());*/
+        testOperationsArray.testUnexpectedMinSum(new OperationsArray());
 
         // test Grades
-        /*TestGrades testGrades = new TestGrades();
+        TestGrades testGrades = new TestGrades();
 
         testGrades.testExpectedNotEnoughGrade(new Grades());
         testGrades.testExpectedAverageNumber(new Grades());
@@ -23,12 +23,16 @@ public class Main {
         testGrades.testExpectedRoundGradeMax(new Grades());
 
         testGrades.testUnexpectedNotEnoughGrade(new Grades());
+        testGrades.testUnexpectedNotEnoughGrade1(new Grades());
         testGrades.testUnexpectedAverageNumber(new Grades());
+        testGrades.testUnexpectedAverageNumber1(new Grades());
         testGrades.testUnexpectedRoundGrade(new Grades());
-        testGrades.testUnexpectedRoundGradeMax(new Grades());*/
+        testGrades.testUnexpectedRoundGrade1(new Grades());
+        testGrades.testUnexpectedRoundGradeMax(new Grades());
+        testGrades.testUnexpectedRoundGradeMax1(new Grades());
 
         // test OperationsBigNumber
-        /*TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
+        TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
 
         testOperationsBigNumber.testExpectedSumNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testExpectedDiffNumbers(new OperationsBigNumber());
@@ -36,9 +40,11 @@ public class Main {
         testOperationsBigNumber.testExpectedDivNumbers(new OperationsBigNumber());
 
         testOperationsBigNumber.testUnexpectedSumNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedSumNumbers1(new OperationsBigNumber());
         testOperationsBigNumber.testUnexpectedDiffNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDiffNumbers1(new OperationsBigNumber());
         testOperationsBigNumber.testUnexpectedMulNumbers(new OperationsBigNumber());
-        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());*/
+        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());
 
         // test ElectronicsStore
         TestElectronicsStore electronicsStore = new TestElectronicsStore();

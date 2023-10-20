@@ -15,6 +15,18 @@ public class TestOperationsBigNumber {
     }
 
     public void testUnexpectedSumNumbers(OperationsBigNumber operationsBigNumber){
+        int[] num1 = {};
+        int[] num2 = {};
+
+        try {
+            operationsBigNumber.sumNumbers(num1, num2);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
+    public void testUnexpectedSumNumbers1(OperationsBigNumber operationsBigNumber){
         int[] num1 = {1, 2};
         int[] num2 = {5};
 
@@ -42,6 +54,18 @@ public class TestOperationsBigNumber {
     public void testUnexpectedDiffNumbers(OperationsBigNumber operationsBigNumber){
         int[] num1 = {};
         int[] num2 = {};
+
+        try {
+            operationsBigNumber.diffNumbers(num1, num2);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+
+    public void testUnexpectedDiffNumbers1(OperationsBigNumber operationsBigNumber){
+        int[] num1 = {1, 2};
+        int[] num2 = {5};
 
         try {
             operationsBigNumber.diffNumbers(num1, num2);
