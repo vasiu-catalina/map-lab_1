@@ -28,7 +28,7 @@ public class Main {
         testGrades.testUnexpectedRoundGradeMax(new Grades());*/
 
         // test OperationsBigNumber
-        TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
+        /*TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();
 
         testOperationsBigNumber.testExpectedSumNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testExpectedDiffNumbers(new OperationsBigNumber());
@@ -38,14 +38,19 @@ public class Main {
         testOperationsBigNumber.testUnexpectedSumNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testUnexpectedDiffNumbers(new OperationsBigNumber());
         testOperationsBigNumber.testUnexpectedMulNumbers(new OperationsBigNumber());
-        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());
+        testOperationsBigNumber.testUnexpectedDivNumbers(new OperationsBigNumber());*/
 
         // test ElectronicsStore
-        /*TestElectronicsStore electronicsStore = new TestElectronicsStore();
+        TestElectronicsStore electronicsStore = new TestElectronicsStore();
 
         electronicsStore.testExpectedCheapKeyboard(new ElectronicsStore());
         electronicsStore.testExpectedExpensiveObject(new ElectronicsStore());
         electronicsStore.testExpectedExpensiveUSB(new ElectronicsStore());
-        electronicsStore.testExpectedTotalPrice(new ElectronicsStore());*/
+        electronicsStore.testExpectedTotalPrice(new ElectronicsStore());
+
+        electronicsStore.testUnexpectedCheapKeyboard(new ElectronicsStore());
+        electronicsStore.testUnexpectedExpensiveObject(new ElectronicsStore());
+        electronicsStore.testUnexpectedExpensiveUSB(new ElectronicsStore());
+        electronicsStore.testUnexpectedTotalPrice(new ElectronicsStore());
     }
 }

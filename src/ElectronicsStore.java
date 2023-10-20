@@ -1,5 +1,8 @@
 public class ElectronicsStore {
-    public int cheapKeyboard(int[] priceKeyboard){
+    public int cheapKeyboard(int[] priceKeyboard) throws Exception{
+        if(priceKeyboard.length == 0)
+            throw new Exception("Array is empty!");
+
         int min = Integer.MAX_VALUE;
 
         for(int i = 0; i < priceKeyboard.length; i++){
@@ -10,7 +13,10 @@ public class ElectronicsStore {
         return min;
     }
 
-    public int expensiveObject(int[] priceKeyboard, int[] priceUSB){
+    public int expensiveObject(int[] priceKeyboard, int[] priceUSB) throws Exception{
+        if(priceKeyboard.length == 0 && priceUSB.length == 0)
+            throw new Exception("Array is empty!");
+
         int max = Integer.MIN_VALUE;
 
         for(int i = 0; i < priceKeyboard.length; i++){
@@ -26,7 +32,10 @@ public class ElectronicsStore {
         return max;
     }
 
-    public int expensiveUSB(int[] priceUSB, int budget){
+    public int expensiveUSB(int[] priceUSB, int budget) throws Exception{
+        if(priceUSB.length == 0)
+            throw new Exception("Array is empty!");
+
         int max = Integer.MIN_VALUE;
 
         for(int i = 0; i < priceUSB.length; i++){
@@ -37,7 +46,10 @@ public class ElectronicsStore {
         return max;
     }
 
-    public int totalPrice(int[] priceKeyboard, int[] priceUSB, int budget){
+    public int totalPrice(int[] priceKeyboard, int[] priceUSB, int budget) throws Exception{
+        if(priceKeyboard.length == 0 || priceUSB.length == 0)
+            throw new Exception("Array is empty!");
+
         int min = Integer.MAX_VALUE;
         int money = cheapKeyboard(priceKeyboard);
 

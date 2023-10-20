@@ -1,5 +1,5 @@
 public class TestElectronicsStore {
-    public void testExpectedCheapKeyboard(ElectronicsStore electronicsStore){
+    public void testExpectedCheapKeyboard(ElectronicsStore electronicsStore) throws Exception{
         int[] priceKeyboard = {40, 35, 70, 15, 45};
 
         try {
@@ -11,17 +11,17 @@ public class TestElectronicsStore {
     }
 
     public void testUnexpectedCheapKeyboard(ElectronicsStore electronicsStore){
-        int[] priceKeyboard = {40, 35, 70, 15, 45};
+        int[] priceKeyboard = {};
 
         try {
-            assert electronicsStore.cheapKeyboard(priceKeyboard) == 35;
+            electronicsStore.cheapKeyboard(priceKeyboard);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedExpensiveObject(ElectronicsStore electronicsStore){
+    public void testExpectedExpensiveObject(ElectronicsStore electronicsStore) throws Exception{
         int[] priceKeyboard = {15, 20, 10, 35};
         int[] priceUSB = {20, 15, 40, 15};
 
@@ -34,18 +34,18 @@ public class TestElectronicsStore {
     }
 
     public void testUnexpectedExpensiveObject(ElectronicsStore electronicsStore){
-        int[] priceKeyboard = {15, 20, 10, 35};
-        int[] priceUSB = {20, 15, 40, 15};
+        int[] priceKeyboard = {};
+        int[] priceUSB = {};
 
         try {
-            assert electronicsStore.expensiveObject(priceKeyboard, priceUSB) == 35;
+            electronicsStore.expensiveObject(priceKeyboard, priceUSB);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedExpensiveUSB(ElectronicsStore electronicsStore){
+    public void testExpectedExpensiveUSB(ElectronicsStore electronicsStore) throws Exception{
         int[] priceUSB = {15, 45, 20};
 
         try {
@@ -57,17 +57,17 @@ public class TestElectronicsStore {
     }
 
     public void testUnexpectedExpensiveUSB(ElectronicsStore electronicsStore){
-        int[] priceUSB = {15, 45, 20};
+        int[] priceUSB = {};
 
         try {
-            assert electronicsStore.expensiveUSB(priceUSB, 30) == 45;
+            electronicsStore.expensiveUSB(priceUSB, 50);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedTotalPrice(ElectronicsStore electronicsStore){
+    public void testExpectedTotalPrice(ElectronicsStore electronicsStore) throws Exception{
         int[] priceKeyboard = {40, 50, 60};
         int[] priceUSB = {8, 12};
 
@@ -80,14 +80,14 @@ public class TestElectronicsStore {
     }
 
     public void testUnexpectedTotalPrice(ElectronicsStore electronicsStore){
-        int[] priceKeyboard = {40, 50, 60};
-        int[] priceUSB = {8, 12};
+        int[] priceKeyboard = {};
+        int[] priceUSB = {};
 
         try {
-            assert electronicsStore.totalPrice(priceKeyboard, priceUSB, 60) == 72;
+            electronicsStore.totalPrice(priceKeyboard, priceUSB, 50);
         }
-        catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 }
