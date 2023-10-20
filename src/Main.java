@@ -2,15 +2,20 @@ public class Main {
     public static void main(String[] args) throws Exception{
 
         // test OperationsArray
-        /*TestOperationsArray testOperationsArray = new TestOperationsArray();
+        TestOperationsArray testOperationsArray = new TestOperationsArray();
 
         testOperationsArray.testExpectedMaxNumber(new OperationsArray());
         testOperationsArray.testExpectedMinNumber(new OperationsArray());
         testOperationsArray.testExpectedMaxSum(new OperationsArray());
-        testOperationsArray.testExpectedMinSum(new OperationsArray());*/
+        testOperationsArray.testExpectedMinSum(new OperationsArray());
+
+        testOperationsArray.testUnexpectedMaxNumber(new OperationsArray());
+        testOperationsArray.testUnexpectedMinNumber(new OperationsArray());
+        testOperationsArray.testUnexpectedMaxSum(new OperationsArray());
+        testOperationsArray.testUnexpectedMinSum(new OperationsArray());
 
         // test Grades
-        TestGrades testGrades = new TestGrades();
+        /*TestGrades testGrades = new TestGrades();
 
         testGrades.testExpectedNotEnoughGrade(new Grades());
         testGrades.testExpectedAverageNumber(new Grades());
@@ -20,7 +25,7 @@ public class Main {
         testGrades.testUnexpectedNotEnoughGrade(new Grades());
         testGrades.testUnexpectedAverageNumber(new Grades());
         testGrades.testUnexpectedRoundGrade(new Grades());
-        testGrades.testUnexpectedRoundGradeMax(new Grades());
+        testGrades.testUnexpectedRoundGradeMax(new Grades());*/
 
         // test OperationsBigNumber
         /*TestOperationsBigNumber testOperationsBigNumber = new TestOperationsBigNumber();

@@ -1,5 +1,5 @@
 public class TestOperationsArray {
-    public void testExpectedMaxNumber(OperationsArray operationsArray){
+    public void testExpectedMaxNumber(OperationsArray operationsArray) throws Exception{
         int[] array = {4, 8, 3, 10, 17};
 
         try {
@@ -10,16 +10,17 @@ public class TestOperationsArray {
     }
 
     public void testUnexpectedMaxNumber(OperationsArray operationsArray){
-        int[] array = {4, 8, 3, 10, 17};
+        int[] array = {};
 
         try {
-            assert operationsArray.maxNumber(array) == 10;
-        } catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+            operationsArray.maxNumber(array);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedMinNumber(OperationsArray operationsArray){
+    public void testExpectedMinNumber(OperationsArray operationsArray) throws Exception{
         int[] array = {4, 8, 3, 10, 17};
 
         try {
@@ -30,16 +31,17 @@ public class TestOperationsArray {
     }
 
     public void testUnexpectedMinNumber(OperationsArray operationsArray){
-        int[] array = {4, 8, 3, 10, 17};
+        int[] array = {};
 
         try {
-            assert operationsArray.minNumber(array) == 10;
-        } catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+            operationsArray.minNumber(array);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedMaxSum(OperationsArray operationsArray){
+    public void testExpectedMaxSum(OperationsArray operationsArray) throws Exception{
         int[] array = {4, 8, 3, 10, 17};
 
         try {
@@ -50,16 +52,17 @@ public class TestOperationsArray {
     }
 
     public void testUnexpectedMaxSum(OperationsArray operationsArray){
-        int[] array = {4, 8, 3, 10, 17};
+        int[] array = {};
 
         try {
-            assert operationsArray.maxSum(array) == 30;
-        } catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+            operationsArray.maxSum(array);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public void testExpectedMinSum(OperationsArray operationsArray){
+    public void testExpectedMinSum(OperationsArray operationsArray) throws Exception{
         int[] array = {4, 8, 3, 10, 17};
 
         try {
@@ -70,12 +73,13 @@ public class TestOperationsArray {
     }
 
     public void testUnexpectedMinSum(OperationsArray operationsArray){
-        int[] array = {4, 8, 3, 10, 17};
+        int[] array = {};
 
         try {
-            assert operationsArray.minSum(array) == 10;
-        } catch (AssertionError e){
-            System.out.println("Not the expected answer!");
+            operationsArray.minSum(array);
+        }
+        catch (Exception e){
+            System.out.println("Exception caught: " + e.getMessage());
         }
     }
 }

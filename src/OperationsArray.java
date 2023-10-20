@@ -1,5 +1,8 @@
 public class OperationsArray {
-    public int maxNumber(int[] array){
+    public int maxNumber(int[] array) throws Exception{
+        if(array.length == 0)
+            throw new Exception("Array is empty!");
+
         int max = -1;
 
         for(int i = 0; i < array.length; i++){
@@ -10,7 +13,10 @@ public class OperationsArray {
         return max;
     }
 
-    public int minNumber(int[] array){
+    public int minNumber(int[] array) throws Exception{
+        if(array.length == 0)
+            throw new Exception("Array is empty!");
+
         int min = 101;
 
         for(int i = 0; i < array.length; i++){
@@ -21,7 +27,10 @@ public class OperationsArray {
         return min;
     }
 
-    public int maxSum(int[] array){
+    public int maxSum(int[] array) throws Exception{
+        if(array.length == 0)
+            throw new Exception("Array is empty!");
+
         int sumMax = 0;
 
         for(int i = 0; i < array.length; i++){
@@ -34,7 +43,10 @@ public class OperationsArray {
         return sumMax;
     }
 
-    public int minSum(int[] array){
+    public int minSum(int[] array) throws Exception{
+        if(array.length == 0)
+            throw new Exception("Array is empty!");
+
         int sumMin = 0;
 
         for(int i = 0; i < array.length; i++){
